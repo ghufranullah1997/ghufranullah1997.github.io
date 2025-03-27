@@ -1,52 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ghufran Ullah</title>
   <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="CV.pdf" class="btn" download>📄 Download CV</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header with Profile -->
   <header>
-    <h1>Ghufran Ullah</h1>
-    <p>Data Analyst | NLP & Deep Learning Enthusiast</p>
-    <a href="CV.pdf" class="btn" download>📄 Download CV</a>
+    <div class="container">
+      <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+      <h1>Ghufran Ullah</h1>
+      <p>Data Analyst | NLP & Deep Learning</p>
+    </div>
   </header>
 
+  <!-- About Section -->
   <section id="about">
-    <h2>About Me</h2>
-    <p>I am a Master's student in Data Analytics at the University of Turku, Finland, with research interests in Natural Language Processing, Deep Learning, and Computer Vision.</p>
-    <p>I enjoy solving real-world problems using data and machine learning methods that are interpretable and impactful.</p>
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a Master's student in Data Analytics at the University of Turku, Finland. My interests lie in Natural Language Processing, Deep Learning, and Computer Vision.</p>
+    </div>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects">
-    <h2>Selected Projects</h2>
-    <ul>
-      <li><strong>Islamophobic Tweet Detection</strong> – Built using ULMFiT with annotated Twitter data.</li>
-      <li><strong>Suicidal Tweet Classifier</strong> – In collaboration with the Department of Psychology, AMU.</li>
-      <li><strong>Rotten Potato Detection</strong> – Achieved 97% accuracy using CV models.</li>
-      <li><strong>Face Mask Detection</strong> – Real-time person identification using CNNs.</li>
-    </ul>
+    <div class="container">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Islamophobic Tweet Detection</strong> – ULMFiT classifier published in IEEE CSI-2022.</li>
+        <li><strong>Suicidal Tweet Detection</strong> – NLP model annotated with psychologist support.</li>
+        <li><strong>Potato Quality Detection</strong> – CNN classifier with 97% accuracy.</li>
+        <li><strong>Face Mask Detection</strong> – Real-time system using InsightFace.</li>
+      </ul>
+    </div>
   </section>
 
+  <!-- Publications Section -->
   <section id="publications">
-    <h2>Publications</h2>
-    <ul>
-      <li><a href="https://ieeexplore.ieee.org/abstract/document/9923957">Islamophobic Tweet Detection – IEEE CSI 2022</a></li>
-      <li><a href="https://www.researchgate.net/publication/368243308">Potato Quality Analysis – IEEE Resilience Conf. 2022</a></li>
-      <li><a href="https://link.springer.com/chapter/10.1007/978-981-19-8136-4_10">Face Mask Detection – Springer IICS 2021</a></li>
-    </ul>
+    <div class="container">
+      <h2>Publications</h2>
+      <ul>
+        <li><a href="https://ieeexplore.ieee.org/abstract/document/9923957">IEEE CSI-2022 – Islamophobic Tweet Detection</a></li>
+        <li><a href="https://www.researchgate.net/publication/368243308">IEEE Resilience – Potato Analysis</a></li>
+        <li><a href="https://link.springer.com/chapter/10.1007/978-981-19-8136-4_10">Springer – Face Mask Detection</a></li>
+      </ul>
+    </div>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
-    <h2>Contact</h2>
-    <p>📧 Email: <a href="mailto:ghufranullah.amu@gmail.com">ghufranullah.amu@gmail.com</a></p>
-    <p>🌐 GitHub: <a href="https://github.com/YOUR_USERNAME">github.com/YOUR_USERNAME</a></p>
-    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/">linkedin.com/in/YOUR-LINKEDIN</a></p>
+    <div class="container">
+      <h2>Contact Me</h2>
+     	<form action="https://formsubmit.co/ghufranullah.amu@gmail.com" method="POST">
+  	<input type="text" name="name" placeholder="Your Name" required>
+  	<input type="email" name="email" placeholder="Your Email" required>
+  	<textarea name="message" placeholder="Your Message" required></textarea>
+  	<button type="submit">Send Message</button>
+	</form>
+
+    </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Ghufran Ullah. Built with HTML & CSS.</p>
+    <p>© 2025 Ghufran Ullah</p>
   </footer>
 </body>
 </html>
